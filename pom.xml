@@ -11,6 +11,10 @@
     <name>Javascript DI Framework</name>
     <packaging>jar</packaging>
 
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
     <dependencies>
         <dependency>
             <groupId>com.jquery</groupId>
@@ -42,12 +46,6 @@
             js files. Ultimately this will be automatically configured given packaging
             and extensions, but for now we specify this explicitly. -->
         <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <excludes>
-                    <exclude>**/*.html</exclude>
-                </excludes>
-            </resource>
             <resource>
                 <directory>src/main/js</directory>
                 <includes>

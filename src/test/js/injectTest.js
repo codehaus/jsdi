@@ -1,4 +1,4 @@
-/*global $, QUnit, __GlobalForTesting */
+/*global $, QUnit */
 
 var equals = QUnit.equals;
 var ok = QUnit.ok;
