@@ -105,3 +105,31 @@ test("requires string id", function() {
 		jsdi.resource(42);
 	});
 });
+
+test("resolve", function() {
+	var a, c;
+
+	a = {
+		b : jsdi.inject(B),
+		d : {
+			id : "rubbish",
+			value : "some value"
+		}
+	};
+
+	c = new jsdi.Configuration({
+		beans : [ {
+			type : B,
+			ctor : function() {
+				return new B();
+			}
+		} ]
+	});
+
+	equals(a.b.name, undefined);
+
+	c.resolve(a);
+
+	equals(a.b.name, "B");
+	equals(a.d.value, "some value");
+});

@@ -72,6 +72,26 @@ jsdi.Configuration.prototype.getBean = function(id) {
 };
 
 /**
+ * Resolves all beans given a scope.
+ * 
+ * @param scope
+ *            the object to search bean definitions for.
+ */
+jsdi.Configuration.prototype.resolve = function(scope) {
+	var self = this, i, obj;
+	for (i in scope) {
+		obj = scope[i];
+		if (obj.id !== undefined) {
+			try {
+				scope[i] = self._resolveBean(self._beanDef(obj.id));
+			} catch (e) {
+				// Don't care we can't resolve something.
+			}
+		}
+	}
+};
+
+/**
  * Return a bean definition given either a type or name.
  */
 jsdi.Configuration.prototype._beanDef = function(id) {
