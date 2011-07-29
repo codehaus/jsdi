@@ -16,13 +16,6 @@
 	</properties>
 
     <dependencies>
-        <dependency>
-            <groupId>com.jquery</groupId>
-            <artifactId>jquery</artifactId>
-            <version>1.6.1</version>
-            <type>js</type>
-        </dependency>
-
         <!-- Test -->
         <dependency>
             <groupId>com.jquery</groupId>
@@ -111,10 +104,6 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.9</version>
                 <configuration>
-                    <!-- Restore this as the Monsanto root POM sets the working directory to the test folder itself.
-                    This then effects the jstestrunner which needs to assume that it is working at the same level
-                    as the pom file (by default). -->
-                    <workingDirectory>${basedir}</workingDirectory>
                     <systemPropertyVariables>
                         <org.codehaus.jstestrunner.commandPattern>${org.codehaus.jstestrunner.commandPattern}</org.codehaus.jstestrunner.commandPattern>
                     </systemPropertyVariables>
@@ -158,7 +147,7 @@
                 <configuration>
                     <webAppConfig>
                         <descriptor>dev-jetty-web.xml</descriptor>
-                        <contextPath>/ftq</contextPath>
+                        <contextPath>/jsdi</contextPath>
                         <resourceBases>
                             <resourceBase>${project.build.outputDirectory}</resourceBase>
                             <resourceBase>${project.build.testOutputDirectory}</resourceBase>
@@ -181,7 +170,6 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <failOnIssues>false</failOnIssues>
                     <disallowDanglingUnderbarInIdentifiers>false</disallowDanglingUnderbarInIdentifiers>
                 </configuration>
             </plugin>
@@ -193,7 +181,6 @@
                     <execution>
                         <goals>
                             <goal>main-import-js</goal>
-                            <goal>main-generate-html</goal>
                             <goal>test-import-js</goal>
                             <goal>test-generate-html</goal>
                         </goals>
