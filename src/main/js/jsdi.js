@@ -81,12 +81,8 @@ jsdi.Configuration.prototype.resolve = function(scope) {
 	var self = this, i, obj;
 	for (i in scope) {
 		obj = scope[i];
-		if (obj.id !== undefined) {
-			try {
-				scope[i] = self._resolveBean(self._beanDef(obj.id));
-			} catch (e) {
-				// Don't care we can't resolve something.
-			}
+		if (obj.constructor.name === "_BeanReference") {
+			scope[i] = self._resolveBean(self._beanDef(obj.id));
 		}
 	}
 };
