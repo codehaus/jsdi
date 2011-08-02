@@ -3,10 +3,12 @@
  */
 var jsdi = {
 	/**
-	 * Internal place holder for a bean.
+	 * Internal place holder for a bean. Placeholders have a special
+	 * __beanReference__ property that gives them away.
 	 */
 	_BeanReference : function(id) {
 		this.id = id;
+		this.__jsdiBeanReference__ = true;
 	},
 
 	/**
@@ -81,7 +83,7 @@ jsdi.Configuration.prototype.resolve = function(scope) {
 	var self = this, i, obj;
 	for (i in scope) {
 		obj = scope[i];
-		if (obj.constructor.name === "_BeanReference") {
+		if (obj.__jsdiBeanReference__) {
 			scope[i] = self._resolveBean(self._beanDef(obj.id));
 		}
 	}
