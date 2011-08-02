@@ -7,12 +7,103 @@
 	<groupId>org.codehaus.jsdi</groupId>
 	<artifactId>jsdi</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
-	<name>Javascript DI Framework</name>
+	<name>JSDI</name>
+	<description>Javascript Dependency Injection Framework.</description>
 	<packaging>jar</packaging>
+
+	<parent>
+		<groupId>org.codehaus</groupId>
+		<artifactId>codehaus-parent</artifactId>
+		<version>3</version>
+	</parent>
+
+	<ciManagement>
+		<system>Bamboo</system>
+		<url>http://bamboo.ci.codehaus.org/browse/JSDI</url>
+	</ciManagement>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+
+	<developers>
+		<developer>
+			<id>johncomalley</id>
+			<name>John O'Malley</name>
+			<roles>
+				<role>Despot</role>
+				<role>Developer</role>
+			</roles>
+			<timezone>-5</timezone>
+		</developer>
+		<developer>
+			<id>huntc</id>
+			<name>Christopher Hunt</name>
+			<organization>Class Action PL</organization>
+			<organizationUrl>http://www.classactionpl.com/</organizationUrl>
+			<roles>
+				<role>Despot</role>
+				<role>Developer</role>
+			</roles>
+			<timezone>10</timezone>
+			<url>http://christopherhunt-software.blogspot.com/</url>
+		</developer>
+	</developers>
+
+	<distributionManagement>
+		<downloadUrl>https://nexus.codehaus.org/content/groups/public</downloadUrl>
+		<site>
+			<id>org.codehaus.jsdi</id>
+			<name>Website</name>
+			<url>dav:https://dav.codehaus.org/jsdi/</url>
+		</site>
+	</distributionManagement>
+
+	<inceptionYear>2011</inceptionYear>
+
+	<issueManagement>
+		<system>JIRA</system>
+		<url>http://jira.codehaus.org/browse/JSDI</url>
+	</issueManagement>
+
+	<licenses>
+		<license>
+			<name>Apache 2</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0</url>
+		</license>
+	</licenses>
+
+	<mailingLists>
+		<mailingList>
+			<archive>http://archive.codehaus.org/lists/org.codehaus.jsdi.user</archive>
+			<name>user@jsdi.codehaus.org</name>
+		</mailingList>
+		<mailingList>
+			<archive>http://archive.codehaus.org/lists/org.codehaus.jsdi.dev</archive>
+			<name>dev@jsdi.codehaus.org</name>
+		</mailingList>
+		<mailingList>
+			<archive>http://archive.codehaus.org/lists/org.codehaus.jsdi.announce</archive>
+			<name>announce@jsdi.codehaus.org</name>
+		</mailingList>
+		<mailingList>
+			<archive>http://archive.codehaus.org/lists/org.codehaus.jsdi.scm</archive>
+			<name>scm@jsdi.codehaus.org</name>
+		</mailingList>
+	</mailingLists>
+	
+	<organization>
+		<name>The Codehaus</name>
+		<url>http://www.codehaus.org/</url>
+	</organization>
+
+	<scm>
+		<connection>scm:git:git://git.codehaus.org/jsdi.git</connection>
+		<developerConnection>scm:git:ssh://git@git.codehaus.org/jsdi.git</developerConnection>
+		<url>http://git.codehaus.org/gitweb.cgi?p=jsdi.git</url>
+	</scm>
+	
+	<url>http://jsdi.codehaus.org/</url>
 
 	<dependencies>
 		<!-- Test -->
@@ -30,6 +121,7 @@
 			<version>0.0.1-SNAPSHOT</version>
 			<scope>test</scope>
 		</dependency>
+		
 	</dependencies>
 
 	<build>
@@ -225,6 +317,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
 
 </project>
