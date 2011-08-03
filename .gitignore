@@ -5,4 +5,7 @@ target
 .checkstyle
 .springBeans
 bin
+jsdi.iml
+jsdi.ipr
+jsdi.iws
 
