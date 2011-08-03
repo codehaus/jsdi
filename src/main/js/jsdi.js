@@ -21,6 +21,18 @@
  * Dependency injection for JavaScript that leverages the Java 5 approach.
  */
 var jsdi = {
+	/**
+	 * Prototype scope for bean creation. Each reference to the bean
+	 * results in an instantiation.
+	 */
+	PROTOTYPE : 1,
+	
+	/**
+	 * Singleton scope - the default scope. Each reference refers to just 
+	 * one instance.
+	 */
+	SINGLETON : 0,
+
     /**
      * Internal place holder for a bean. Placeholders have a special
      * __beanReference__ property that gives them away.
@@ -138,7 +150,7 @@ jsdi.Configuration.prototype._beanDef = function(id) {
 jsdi.Configuration.prototype._resolveBean = function(beanDefinition) {
     var self = this, bean, property;
 
-    if (!beanDefinition.bean || beanDefinition.scope === 'prototype') {
+    if (!beanDefinition.bean || beanDefinition.scope === jsdi.PROTOTYPE) {
         bean = beanDefinition.ctor();
         beanDefinition.bean = bean;
         for (property in bean) {

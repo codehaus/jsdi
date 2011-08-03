@@ -96,7 +96,7 @@ test("prototype scope", function() {
         beans : [
             {
                 type : B,
-                scope : "prototype",
+                scope : jsdi.PROTOTYPE,
                 ctor : function() {
                     return new B();
                 }
