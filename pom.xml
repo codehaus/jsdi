@@ -1,297 +1,297 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-	<modelVersion>4.0.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.codehaus.jsdi</groupId>
-	<artifactId>jsdi</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
-	<name>JSDI</name>
-	<description>Javascript Dependency Injection Framework.</description>
-	<packaging>jar</packaging>
+    <groupId>org.codehaus.jsdi</groupId>
+    <artifactId>jsdi</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>JSDI</name>
+    <description>Javascript Dependency Injection Framework.</description>
+    <packaging>jar</packaging>
 
-	<parent>
-		<groupId>org.codehaus</groupId>
-		<artifactId>codehaus-parent</artifactId>
-		<version>3</version>
-	</parent>
+    <parent>
+        <groupId>org.codehaus</groupId>
+        <artifactId>codehaus-parent</artifactId>
+        <version>3</version>
+    </parent>
 
-	<ciManagement>
-		<system>Bamboo</system>
-		<url>http://bamboo.ci.codehaus.org/browse/JSDI</url>
-	</ciManagement>
+    <ciManagement>
+        <system>Bamboo</system>
+        <url>http://bamboo.ci.codehaus.org/browse/JSDI</url>
+    </ciManagement>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
-	<developers>
-		<developer>
-			<id>johncomalley</id>
-			<name>John O'Malley</name>
-			<roles>
-				<role>Despot</role>
-				<role>Developer</role>
-			</roles>
-			<timezone>-5</timezone>
-		</developer>
-		<developer>
-			<id>huntc</id>
-			<name>Christopher Hunt</name>
-			<organization>Class Action PL</organization>
-			<organizationUrl>http://www.classactionpl.com/</organizationUrl>
-			<roles>
-				<role>Despot</role>
-				<role>Developer</role>
-			</roles>
-			<timezone>10</timezone>
-			<url>http://christopherhunt-software.blogspot.com/</url>
-		</developer>
-	</developers>
+    <developers>
+        <developer>
+            <id>johncomalley</id>
+            <name>John O'Malley</name>
+            <roles>
+                <role>Despot</role>
+                <role>Developer</role>
+            </roles>
+            <timezone>-5</timezone>
+        </developer>
+        <developer>
+            <id>huntc</id>
+            <name>Christopher Hunt</name>
+            <organization>Class Action PL</organization>
+            <organizationUrl>http://www.classactionpl.com/</organizationUrl>
+            <roles>
+                <role>Despot</role>
+                <role>Developer</role>
+            </roles>
+            <timezone>10</timezone>
+            <url>http://christopherhunt-software.blogspot.com/</url>
+        </developer>
+    </developers>
 
-	<distributionManagement>
-		<downloadUrl>https://nexus.codehaus.org/content/groups/public</downloadUrl>
-		<site>
-			<id>org.codehaus.jsdi</id>
-			<name>Website</name>
-			<url>dav:https://dav.codehaus.org/jsdi/</url>
-		</site>
-	</distributionManagement>
+    <distributionManagement>
+        <downloadUrl>https://nexus.codehaus.org/content/groups/public</downloadUrl>
+        <site>
+            <id>org.codehaus.jsdi</id>
+            <name>Website</name>
+            <url>dav:https://dav.codehaus.org/jsdi/</url>
+        </site>
+    </distributionManagement>
 
-	<inceptionYear>2011</inceptionYear>
+    <inceptionYear>2011</inceptionYear>
 
-	<issueManagement>
-		<system>JIRA</system>
-		<url>http://jira.codehaus.org/browse/JSDI</url>
-	</issueManagement>
+    <issueManagement>
+        <system>JIRA</system>
+        <url>http://jira.codehaus.org/browse/JSDI</url>
+    </issueManagement>
 
-	<licenses>
-		<license>
-			<name>Apache 2</name>
-			<url>http://www.apache.org/licenses/LICENSE-2.0</url>
-		</license>
-	</licenses>
+    <licenses>
+        <license>
+            <name>Apache 2</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
 
-	<mailingLists>
-		<mailingList>
-			<archive>http://archive.codehaus.org/lists/org.codehaus.jsdi.user</archive>
-			<name>user@jsdi.codehaus.org</name>
-		</mailingList>
-		<mailingList>
-			<archive>http://archive.codehaus.org/lists/org.codehaus.jsdi.dev</archive>
-			<name>dev@jsdi.codehaus.org</name>
-		</mailingList>
-		<mailingList>
-			<archive>http://archive.codehaus.org/lists/org.codehaus.jsdi.announce</archive>
-			<name>announce@jsdi.codehaus.org</name>
-		</mailingList>
-		<mailingList>
-			<archive>http://archive.codehaus.org/lists/org.codehaus.jsdi.scm</archive>
-			<name>scm@jsdi.codehaus.org</name>
-		</mailingList>
-	</mailingLists>
-	
-	<organization>
-		<name>The Codehaus</name>
-		<url>http://www.codehaus.org/</url>
-	</organization>
+    <mailingLists>
+        <mailingList>
+            <archive>http://archive.codehaus.org/lists/org.codehaus.jsdi.user</archive>
+            <name>user@jsdi.codehaus.org</name>
+        </mailingList>
+        <mailingList>
+            <archive>http://archive.codehaus.org/lists/org.codehaus.jsdi.dev</archive>
+            <name>dev@jsdi.codehaus.org</name>
+        </mailingList>
+        <mailingList>
+            <archive>http://archive.codehaus.org/lists/org.codehaus.jsdi.announce</archive>
+            <name>announce@jsdi.codehaus.org</name>
+        </mailingList>
+        <mailingList>
+            <archive>http://archive.codehaus.org/lists/org.codehaus.jsdi.scm</archive>
+            <name>scm@jsdi.codehaus.org</name>
+        </mailingList>
+    </mailingLists>
 
-	<scm>
-		<connection>scm:git:git://git.codehaus.org/jsdi.git</connection>
-		<developerConnection>scm:git:ssh://git@git.codehaus.org/jsdi.git</developerConnection>
-		<url>http://git.codehaus.org/gitweb.cgi?p=jsdi.git</url>
-	</scm>
-	
-	<url>http://jsdi.codehaus.org/</url>
+    <organization>
+        <name>The Codehaus</name>
+        <url>http://www.codehaus.org/</url>
+    </organization>
 
-	<dependencies>
-		<!-- Test -->
-		<dependency>
-			<groupId>com.jquery</groupId>
-			<artifactId>qunit</artifactId>
-			<version>25e4489</version>
-			<type>js</type>
-			<scope>test</scope>
-		</dependency>
+    <scm>
+        <connection>scm:git:git://git.codehaus.org/jsdi.git</connection>
+        <developerConnection>scm:git:ssh://git@git.codehaus.org/jsdi.git</developerConnection>
+        <url>http://git.codehaus.org/gitweb.cgi?p=jsdi.git</url>
+    </scm>
 
-		<dependency>
-			<groupId>org.codehaus.jstestrunner</groupId>
-			<artifactId>jstestrunner-junit</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-			<scope>test</scope>
-		</dependency>
-		
-	</dependencies>
+    <url>http://jsdi.codehaus.org/</url>
 
-	<build>
-		<!-- Configure our resources so that html files are not copied (the js 
-			import plugin needs to process and copy them) and declare the location of 
-			js files. Ultimately this will be automatically configured given packaging 
-			and extensions, but for now we specify this explicitly. -->
-		<resources>
-			<resource>
-				<directory>src/main/js</directory>
-				<includes>
-					<include>**/*.js</include>
-				</includes>
-				<targetPath>js</targetPath>
-			</resource>
-		</resources>
-		<testResources>
-			<testResource>
-				<directory>src/test/resources</directory>
-				<excludes>
-					<exclude>**/*.html</exclude>
-				</excludes>
-			</testResource>
-			<testResource>
-				<directory>src/test/js</directory>
-				<includes>
-					<include>**/*.js</include>
-				</includes>
-				<targetPath>js</targetPath>
-			</testResource>
-		</testResources>
+    <dependencies>
+        <!-- Test -->
+        <dependency>
+            <groupId>com.jquery</groupId>
+            <artifactId>qunit</artifactId>
+            <version>25e4489</version>
+            <type>js</type>
+            <scope>test</scope>
+        </dependency>
 
-		<plugins>
-			<!-- As we of are packaging type jar, given that we need to control the 
-				packaging via assembly (the war plugin doesn't fit our directory layout), 
-				we must bring in each typical Maven plugin that gets used in a project and 
-				specify the goals we need. The goals generally have default lifecycles. -->
+        <dependency>
+            <groupId>org.codehaus.jstestrunner</groupId>
+            <artifactId>jstestrunner-junit</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>test</scope>
+        </dependency>
 
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-resources-plugin</artifactId>
-				<version>2.5</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>resources</goal>
-							<goal>testResources</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.3.2</version>
-				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
-				</configuration>
-				<executions>
-					<execution>
-						<goals>
-							<goal>compile</goal>
-							<goal>testCompile</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.9</version>
-				<configuration>
-					<systemPropertyVariables>
-						<org.codehaus.jstestrunner.commandPattern>${org.codehaus.jstestrunner.commandPattern}</org.codehaus.jstestrunner.commandPattern>
-					</systemPropertyVariables>
-				</configuration>
-				<executions>
-					<execution>
-						<goals>
-							<goal>test</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jar-plugin</artifactId>
-				<version>2.3.1</version>
-				<executions>
-					<execution>
-			            <id>default-jar</id>
-						<phase>none</phase>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-install-plugin</artifactId>
-				<version>2.3.1</version>
-				<configuration>
-					<file>${project.build.outputDirectory}${file.separator}jsdi.js</file>
-					<groupId>${project.groupId}</groupId>
-					<artifactId>${project.artifactId}</artifactId>
-					<version>${project.version}</version>>
-					<packaging>js</packaging>
-				</configuration>
-				<executions>
-					<execution>
-						<phase>install</phase>
-						<goals>
-							<goal>install-file</goal>
-						</goals>
-					</execution>
-					<execution>
-			            <id>default-install</id>
-						<phase>none</phase>
-					</execution>
-				</executions>
-			</plugin>
+    </dependencies>
 
-			<!-- For use during development. -->
-			<plugin>
-				<groupId>org.mortbay.jetty</groupId>
-				<artifactId>jetty-maven-plugin</artifactId>
-				<version>7.4.2.v20110526</version>
-				<configuration>
-					<webAppConfig>
-						<descriptor>dev-jetty-web.xml</descriptor>
-						<contextPath>/jsdi</contextPath>
-						<resourceBases>
-							<resourceBase>${project.build.outputDirectory}</resourceBase>
-							<resourceBase>${project.build.testOutputDirectory}</resourceBase>
-						</resourceBases>
-					</webAppConfig>
-				</configuration>
-			</plugin>
+    <build>
+        <!-- Configure our resources so that html files are not copied (the js
+              import plugin needs to process and copy them) and declare the location of
+              js files. Ultimately this will be automatically configured given packaging
+              and extensions, but for now we specify this explicitly. -->
+        <resources>
+            <resource>
+                <directory>src/main/js</directory>
+                <includes>
+                    <include>**/*.js</include>
+                </includes>
+                <targetPath>js</targetPath>
+            </resource>
+        </resources>
+        <testResources>
+            <testResource>
+                <directory>src/test/resources</directory>
+                <excludes>
+                    <exclude>**/*.html</exclude>
+                </excludes>
+            </testResource>
+            <testResource>
+                <directory>src/test/js</directory>
+                <includes>
+                    <include>**/*.js</include>
+                </includes>
+                <targetPath>js</targetPath>
+            </testResource>
+        </testResources>
 
-			<!-- Special plugins for JS development. -->
-			<plugin>
-				<groupId>org.codehaus.mojo.jslint</groupId>
-				<artifactId>jslint-plugin</artifactId>
-				<version>1.0.0-SNAPSHOT</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>main-jslint</goal>
-							<goal>test-jslint</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<disallowDanglingUnderbarInIdentifiers>false</disallowDanglingUnderbarInIdentifiers>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo.jsimport</groupId>
-				<artifactId>js-import-plugin</artifactId>
-				<version>1.0.0-SNAPSHOT</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>main-import-js</goal>
-							<goal>test-import-js</goal>
-							<goal>test-generate-html</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
-	</build>
+        <plugins>
+            <!-- As we of are packaging type jar, given that we need to control the
+                   packaging via assembly (the war plugin doesn't fit our directory layout),
+                   we must bring in each typical Maven plugin that gets used in a project and
+                   specify the goals we need. The goals generally have default lifecycles. -->
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.5</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>resources</goal>
+                            <goal>testResources</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>compile</goal>
+                            <goal>testCompile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.9</version>
+                <configuration>
+                    <systemPropertyVariables>
+                        <org.codehaus.jstestrunner.commandPattern>${org.codehaus.jstestrunner.commandPattern}</org.codehaus.jstestrunner.commandPattern>
+                    </systemPropertyVariables>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>test</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.3.1</version>
+                <executions>
+                    <execution>
+                        <id>default-jar</id>
+                        <phase>none</phase>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-install-plugin</artifactId>
+                <version>2.3.1</version>
+                <configuration>
+                    <file>${project.build.outputDirectory}${file.separator}jsdi.js</file>
+                    <groupId>${project.groupId}</groupId>
+                    <artifactId>${project.artifactId}</artifactId>
+                    <version>${project.version}</version>
+                    <packaging>js</packaging>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>install-file</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>default-install</id>
+                        <phase>none</phase>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- For use during development. -->
+            <plugin>
+                <groupId>org.mortbay.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>7.4.2.v20110526</version>
+                <configuration>
+                    <webAppConfig>
+                        <descriptor>dev-jetty-web.xml</descriptor>
+                        <contextPath>/jsdi</contextPath>
+                        <resourceBases>
+                            <resourceBase>${project.build.outputDirectory}</resourceBase>
+                            <resourceBase>${project.build.testOutputDirectory}</resourceBase>
+                        </resourceBases>
+                    </webAppConfig>
+                </configuration>
+            </plugin>
+
+            <!-- Special plugins for JS development. -->
+            <plugin>
+                <groupId>org.codehaus.mojo.jslint</groupId>
+                <artifactId>jslint-plugin</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>main-jslint</goal>
+                            <goal>test-jslint</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <disallowDanglingUnderbarInIdentifiers>false</disallowDanglingUnderbarInIdentifiers>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo.jsimport</groupId>
+                <artifactId>js-import-plugin</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>main-import-js</goal>
+                            <goal>test-import-js</goal>
+                            <goal>test-generate-html</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
